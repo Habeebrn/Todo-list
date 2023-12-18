@@ -1,38 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: rgb(98, 27, 165);
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  
+}
+.TodoWrapper {
+
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* text-align: center; */
+  /* background-color: aliceblue; */
 }
+.TodoForm {
+  display: flex;
+  gap: 10px;
+  width: auto;
+  height: 50px;
+  background-color: rgba(55, 8, 66, 0.904);
+  /* margin-top: 50px; */
+  padding: 50px;
+  /* border-radius:15px 15px 0 0; */
 
-.App-link {
-  color: #61dafb;
 }
+.Todo_input {
+  width: 400px;
+  height: 40px;
+  border-radius: 10px;
+  border: 5px solid rgba(199, 24, 190, 0.644);
+  color: rgb(214, 159, 247);
+  outline: none;
+  padding-left:10px;
+  border: none;
+  background-color: rgba(137, 43, 226, 0.089);
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+.Todo_input::placeholder {
+  color: rgb(167, 27, 248);
+}
+.Todo_btn {
+  width: 80px;
+  height: 40px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: blueviolet;
+  box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  font-weight: 700;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+}
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 500px;
+  height: auto;
+  background-color: rgba(55, 8, 66, 0.904);
+  /* margin-top: 50px; */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+
+  /* border-radius: 0 0 15px 15px; */
+  color: rgb(214, 159, 247);
+
+  
+}
+.Todo div {
+  display: flex;
+  gap: 20px;
+}
+.completed {
+  text-decoration: line-through;
 }
